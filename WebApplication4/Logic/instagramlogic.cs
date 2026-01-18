@@ -1,11 +1,9 @@
 ﻿using System.Data;
-using System.Data.SqlTypes;
-using System.Runtime.CompilerServices;
-using System.Security.AccessControl;
+
 using WebApplication4.Dtoinstagram;
 using WebApplication4.Iinstagram;
 using Microsoft.Data.SqlClient;
-using System.Threading.Tasks;
+
 using Dapper;
 
 
