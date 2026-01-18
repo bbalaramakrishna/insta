@@ -45,6 +45,7 @@ namespace WebApplication4.Logic
         {
             IDbConnection conn = new SqlConnection(connectionstring);
             conn.Open();
+
             // Use Execute for non-query command; returns number of rows affected
             var rows = conn.Execute("Update ECEC Set Firstname = @fname where id = @id", new { Id = id, fname = firstName });
             conn.Close();
