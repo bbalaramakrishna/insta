@@ -18,6 +18,7 @@ namespace WebApplication4.Logic
          
         public async Task<List<Instagramdto>> ECEData(int id)
         {
+
             IDbConnection conn = new SqlConnection(connectionstring); 
             conn.Open();
            var dto =   await conn.QueryAsync<Instagramdto>("select * from EceC where id = @Id",new{Id = id});
